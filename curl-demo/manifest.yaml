@@ -1,0 +1,20 @@
+
+plugin:
+  id: "demo_baidu"                 # 全局唯一标识符 不可以和其他插件重复
+  name: "百度自动搜索"               # 展示名称
+  version: "1.0.0"                 # 语义化版本号
+  author: "admin@5ibug.net"        # 开发者邮箱/ID
+  description: "这是一个示例插件..."  # 简短描述
+  type: 1
+
+config:
+  wd:
+    type: "string"
+    label: '搜索内容'
+    required: true
+
+curl:
+  command: "https://www.baidu.com/s?wd=${wd}"
+
+requirements:
+  min_system_version: "1.0.0"        # 最低系统版本要求
