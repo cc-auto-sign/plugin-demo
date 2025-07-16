@@ -45,9 +45,9 @@ config:
   	required: true
   	options: 
       - value: "all"
-  		  label: "全部"
+        label: "全部"
       - value: "new"
-  		  label: "最新"
+        label: "最新"
   
 curl: # curl运行命令，在type为1时生效
   command: "curl https://www.baidu.com"
